@@ -1,7 +1,11 @@
 import { Greetings } from "./Greetings";
-
+import { Bank } from "./exos/Bank";
 export function App() {
-    return (
+    return <div>
+        <Bank nomBanque="Banque centrale" />
+    </div>
+
+    /* (
         <>
             <h1>Hello from React World !</h1>
             <Greetings 
@@ -19,5 +23,5 @@ export function App() {
                 <img src="https://cdn.pixabay.com/photo/2024/05/02/16/22/parrots-8735074_1280.jpg" width={300} alt="Screen Shot" />
             </Greetings>
         </>
-    )
+    ) */
 }
