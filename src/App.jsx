@@ -1,9 +1,18 @@
-import { Greetings } from "./Greetings";
-import { Bank } from "./exos/Bank";
+// import { Greetings } from "./Greetings";
+// import { Bank } from "./exos/Bank";
+
+import { AgeCounter } from "./AgeCounter";
+
 export function App() {
-    return <div>
+    return (
+        <>
+            <AgeCounter />
+        </>
+    )
+
+    /* return <div>
         <Bank nomBanque="Banque centrale" />
-    </div>
+    </div> */
 
     /* (
         <>
