@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { AgeDisplay } from './AgeDisplay';
 
 export function AgeCounter(props) {
     // let age = 30;
@@ -9,11 +10,12 @@ export function AgeCounter(props) {
         setAge(age + 1);
     }
 
-    console.log("Component Rerendering");
+    console.log("AgeCounter Component Rerendering");
     
     return (
         <>
-            <div>You are {age} years Old !</div>
+            {/* <div>You are {age} years Old !</div> */}
+            <AgeDisplay age={age} />
             <button onClick={increaseAge}>Increase Age</button>
         </>
     )
