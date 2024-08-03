@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { AgeDisplay } from './AgeDisplay';
+import { AgeDisplay } from '../AgeDisplay/AgeDisplay';
 
 export function AgeCounter(props) {
     // let age = 30;
