@@ -1,14 +1,26 @@
 // import { Greetings } from "./Greetings";
 // import { Bank } from "./exos/Bank";
 
-import { AgeCounter } from "./AgeCounter";
+import { useState } from "react";
+// import { AgeCounter } from "./AgeCounter";
 
 export function App() {
+    const [movie, setMovie] = useState("The Lord of the Rings");
+
+    function updateMovie() {
+        setMovie("Fight Club");
+
+        console.log(movie);   
+    }
+    
+    console.log(movie);
+       
     console.log("App Component Rerendering");
     
     return (
         <>
-            <AgeCounter />
+            {/* <AgeCounter /> */}
+            <button onClick={updateMovie}>{movie}</button>
         </>
     )
 
